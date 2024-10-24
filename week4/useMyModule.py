@@ -1,0 +1,2 @@
+import mymodule
+mymodule.sayHello()
