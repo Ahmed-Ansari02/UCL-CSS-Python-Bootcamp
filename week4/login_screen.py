@@ -1,33 +1,39 @@
-# while (True):
-#     password = input("Please enter a password")
-#     if (password == "password"):
-#         print("You entered the correct password")
-#         break
-#     else:
-#         print("Your password is incorrect")
-# print("This is outside the loop")
+while (True):
+     print("hi can you give me your password")
+     password = input()
+     if password == "password":
+          print("correct")
+          break
+     else:
+          print("try again")
+print("Yay! you logged in")
 
-# trys = 0
-# while trys < 4:
+count = 0
+while (count < 3):
+     print("yay i can count")
+     count = count +1
 
-#     password = input("Please enter password")
-#     if password == "1234":
-#         print("Good job")
-#         break
-#     else:
-#         print("wrong!")
-#         trys = trys + 1
+shopping_list = ["milk", "eggs", "bread", "brownies"]
+print(f"List before: {shopping_list}")
+shopping_list.append("apples")
+print(f"List after: {shopping_list}")
+print(f"your list is {len(shopping_list)} long")
+shopping_list.pop(1)
+print(f"Removed last item in {shopping_list}")
+length = len(shopping_list)
+string = "your list is " + str(length) + " long"
+print(string)
+print(f"your list is {length} long")
 
+#find the average of these numbers
+numbers= [1,2,3,4,5,6,7,8,9,10,11,12,20]
 
-# for i in range(10):
-#     print("hello")
-# count = 1
-# shopping_list = ["Eggs", "Milk", "Bread", "Computer"]
-#                 # 0        #1       #2
+sumOfNumbers= 0
 
-# print("1")
-
-for c in '123':
-     print(c+1)
-
-
+for num in numbers:
+     sumOfNumbers = sumOfNumbers+num
+     # counter = counter +1
+     
+print(f"sum is {sumOfNumbers}")
+avg = sumOfNumbers/len(numbers)
+print(f"average is {avg}")
